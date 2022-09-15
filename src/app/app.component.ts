@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 
+/* istanbul ignore next */
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
@@ -7,4 +8,8 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'coverage-issue';
+
+  public someFunction() {
+    console.log('something');
+  }
 }
